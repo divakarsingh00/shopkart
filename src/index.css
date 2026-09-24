@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Roboto", Arial, sans-serif;
+  background: #f1f3f6;
+  color: #212121;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f3f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 10px;
+}
+
+@layer components {
+  .page-container {
+    width: min(1240px, calc(100% - 32px));
+    margin: 0 auto;
+  }
+
+  .section-card {
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .primary-button {
+    background: #2874f0;
+    color: white;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: 0.2s ease;
+  }
+
+  .primary-button:hover {
+    background: #1d63d4;
+  }
+
+  .orange-button {
+    background: #fb641b;
+    color: white;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: 0.2s ease;
+  }
+
+  .orange-button:hover {
+    background: #e6530d;
+  }
+}
